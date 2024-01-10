@@ -1,1 +1,27 @@
+import random
+# Guess the name game. Code in Spanish as it is mt first lenguage, will change as I progress
+def  juego_adivinar_numero():
+    numero_secreto = random.randint(1, 20)  # Genera un número aleatorio entre 1 y 20
+    intentos_realizados = 0
+    max_intentos = 5
+
+    print("¡Bienvenido al juego de adivinar el número!")
+    print("Estoy pensando en un número entre 1 y 20.")
+
+    while intentos_realizados < max_intentos:
+        intento = int(input("Intenta adivinar el número: "))
+
+        intentos_realizados += 1
+
+        if intento < numero_secreto:
+            print("El número es más alto. Intenta de nuevo.")
+        elif intento > numero_secreto:
+            print("El número es más bajo. Intenta de nuevo.")
+        else:
+            print(f"¡Felicidades! El numero es {numero_secreto} ¡Adivinaste el número en {intentos_realizados} intentos!")
+            break
+    else:
+        print(f"¡El número secreto era {numero_secreto}! Has agotado tus intentos. ¡Mejor suerte la próxima vez!")
+
+juego_adivinar_numero()
 
