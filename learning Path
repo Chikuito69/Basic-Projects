@@ -1,5 +1,5 @@
 import random
-# Guess the name game. Code in Spanish as it is mt first lenguage, will change as I progress
+# Guess the name game. Code in Spanish as it is my first lenguage, will change as I progress
 def  juego_adivinar_numero():
     numero_secreto = random.randint(1, 20)  # Genera un número aleatorio entre 1 y 20
     intentos_realizados = 0
